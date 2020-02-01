@@ -57,6 +57,8 @@ import { AddPpcBrandComponent } from './ppc/master/add-ppc-brand/add-ppc-brand.c
 import { ListPpcBrandComponent } from './ppc/master/list-ppc-brand/list-ppc-brand.component';
 import { AddPpcSizeComponent } from './ppc/master/add-ppc-size/add-ppc-size.component';
 import { ListPpcSizeComponent } from './ppc/master/list-ppc-size/list-ppc-size.component';
+import { FinanceMasterComponent } from './finance/finance-master/finance-master.component';
+import { MasterChartOfAccountsComponent } from './finance/finance-master/master-chart-of-accounts/master-chart-of-accounts.component';
 
 @NgModule({
   declarations: [
@@ -112,7 +114,9 @@ import { ListPpcSizeComponent } from './ppc/master/list-ppc-size/list-ppc-size.c
     AddPpcBrandComponent,
     ListPpcBrandComponent,
     AddPpcSizeComponent,
-    ListPpcSizeComponent, 
+    ListPpcSizeComponent,
+    FinanceMasterComponent,
+    MasterChartOfAccountsComponent
   ],
   imports: [
     BrowserModule,

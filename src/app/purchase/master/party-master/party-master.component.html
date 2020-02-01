@@ -1,0 +1,182 @@
+<!-- begin #content -->
+<div id="content" class="content">
+    <!-- begin breadcrumb -->
+    <app-tree-navbar></app-tree-navbar>
+    <!-- end page-header -->
+    
+    <!-- begin row -->
+    
+    <!-- end row -->
+
+    <div class="row">
+    
+        <div class="panel p-20 col-lg-12">
+            <form [formGroup]="partyForm" (ngSubmit)="onSubmit()" novalidate>
+                <fieldset>
+                    <!-- begin row -->
+                    <div class="row">
+                        <!-- begin col-8 -->
+                        <div class="col-md-12">
+                            <div class="form-group row m-b-10">
+                                <div class="col-md-4"> 
+                                    <label class="col-form-label">Party Code</label>
+                                    <select class="form-control">
+                                        <option>Select Party Code</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                  
+                                </div>
+                                <div class="col-md-4"> 
+                                    <label class="col-form-label">Name</label>
+                                    <div class="">
+                                        <input type="text" class="form-control w-100" formControlName="Partyname" placeholder="Party Name">
+                                        <div *ngIf="partyForm.controls['Partyname'].invalid && (partyForm.controls['Partyname'].dirty || partyForm.controls['Partyname'].touched)" class="alert alert-danger">
+                                            <div *ngIf="partyForm.controls['Partyname'].errors.required">
+                                                Party Name is required.
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <label class="col-form-label">Address</label>
+                                    <input type="text" class="form-control m-b-5 input_num areacode" formControlName="Address" placeholder="Address">
+                                    <div *ngIf="partyForm.controls['Address'].invalid && (partyForm.controls['Address'].dirty || partyForm.controls['Address'].touched)" class="alert alert-danger">
+                                        <div *ngIf="partyForm.controls['Address'].errors.required">
+                                            Address is required.
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group row m-b-10">
+                                <div class="col-md-4"> 
+                                    <label class="col-form-label">Country</label>
+                                    <select class="form-control">
+                                        <option value="">Select Country</option>
+                                        <option>India</option>
+                                        <option>Austalia</option>
+                                        <option>Canada</option>
+                                        <option>U.S.A.</option>
+                                    </select>
+                                    
+                                </div>
+                                <div class="col-md-4"> 
+                                    <label class="col-form-label">City</label>
+                                    <select class="form-control">
+                                        <option value="">Select City</option>
+                                        <option>Delhi</option>
+                                        <option>Kanpur</option>
+                                        <option>Lucknow</option>
+                                        <option>Pune</option>
+                                        <option>Srinagar</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <label class="col-form-label">Pin Code</label>
+                                    <input type="text" class="form-control" formControlName="pinCode" placeholder="Pin Code">
+                                    <div *ngIf="partyForm.controls['pinCode'].invalid && (partyForm.controls['pinCode'].dirty || partyForm.controls['pinCode'].touched)" class="alert alert-danger">
+                                        <div *ngIf="partyForm.controls['pinCode'].errors.required">
+                                            Pin Code is required.
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-10">
+                                <div class="col-md-4"> 
+                                    <label class="col-form-label">Email Address</label>
+                                    <input type="email" class="form-control" formControlName="email" placeholder="email@email.com">
+                                    <div *ngIf="partyForm.controls['email'].invalid && (partyForm.controls['email'].dirty || partyForm.controls['email'].touched)" class="alert alert-danger">
+                                        <div *ngIf="partyForm.controls['email'].errors.required">
+                                            Email is required.
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4"> 
+                                    <label class="col-form-label">Telephone No.</label>
+                                    <input type="text" class="form-control" formControlName="tele" placeholder="Telephone No.">
+                                    <div *ngIf="partyForm.controls['tele'].invalid && (partyForm.controls['tele'].dirty || partyForm.controls['tele'].touched)" class="alert alert-danger">
+                                        <div *ngIf="partyForm.controls['tele'].errors.required">
+                                            Telephone No. is required.
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <label class="col-form-label">Telex No.</label>
+                                    <input type="text" class="form-control" formControlName="telex" placeholder="Telex No.">
+                                    <div *ngIf="partyForm.controls['telex'].invalid && (partyForm.controls['telex'].dirty || partyForm.controls['telex'].touched)" class="alert alert-danger">
+                                        <div *ngIf="partyForm.controls['telex'].errors.required">
+                                            Telex No. is required.
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-10">
+                                <div class="col-md-4"> 
+                                    <label class="col-form-label">Contact Person </label>
+                                    <input type="text" class="form-control" formControlName="ContactPerson" placeholder="Contact Person">
+                                    <div *ngIf="partyForm.controls['ContactPerson'].invalid && (partyForm.controls['ContactPerson'].dirty || partyForm.controls['ContactPerson'].touched)" class="alert alert-danger">
+                                        <div *ngIf="partyForm.controls['ContactPerson'].errors.required">
+                                            Contact Person is required.
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4"> 
+                                    <label class="col-form-label">State Tax Reg. No.</label>
+                                    <input type="text" class="form-control" formControlName="StateTax" placeholder="State Tax Reg.  No.">
+                                    <div *ngIf="partyForm.controls['StateTax'].invalid && (partyForm.controls['StateTax'].dirty || partyForm.controls['StateTax'].touched)" class="alert alert-danger">
+                                        <div *ngIf="partyForm.controls['StateTax'].errors.required">
+                                            State Tax is required.
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <label class="col-form-label">Central Tax Reg. No.</label>
+                                    <input type="text" class="form-control" formControlName="cantraltax" placeholder="Central Tax Reg. No.">
+                                    <div *ngIf="partyForm.controls['cantraltax'].invalid && (partyForm.controls['cantraltax'].dirty || partyForm.controls['cantraltax'].touched)" class="alert alert-danger">
+                                        <div *ngIf="partyForm.controls['cantraltax'].errors.required">
+                                            Cantral Tax is required.
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-10">
+                                <div class="col-md-4">
+                                    <label class="col-form-label">Purchase Tax Code</label>
+                                    <div class="input-group">
+                                        <input type="text" name="" class="form-control col-lg-2">
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-10">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" [disabled]="!partyForm.valid" class="btn btn-success mr-2"> OK </button>
+                                    <button type="submit" class="btn btn-primary"> Cancel </button>
+                                </div>	
+                            </div>
+                        </div>
+                        <!-- end col-8 -->
+                    </div>
+                    <!-- end row -->
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!-- end row -->
+    
+    
+    <!-- begin #footer -->
+    <app-footer></app-footer>
+    <!-- end #footer -->
+</div>
+<!-- end #content -->

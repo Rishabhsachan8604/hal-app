@@ -1,0 +1,47 @@
+<!-- begin #content -->
+<div id="content" class="content">
+    <app-tree-navbar></app-tree-navbar>
+
+    <div>
+    
+        <div class="panel p-20">
+            <form [formGroup]="unitForm" (ngSubmit)="onSubmit()" novalidate>
+                <div class="form-group m-b-10 form-inline">
+                    <label class="col-lg-3 col-form-label">Unit Code</label>
+                    <div class="col-lg-7">
+                        <select class="form-control" formControlName="SelectUnit">
+                            <option value=""> Select Unit</option>
+                            <option>KG</option>
+                            <option>g</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group m-b-10 form-inline">
+                    <label class="col-lg-3 col-form-label">Description</label>
+                    <div class="col-lg-7">
+                        <input type="text" class="form-control col-lg-6" formControlName="Description" placeholder="Description">
+                        <div *ngIf="unitForm.controls['Description'].invalid && (unitForm.controls['Description'].dirty || unitForm.controls['Description'].touched)" class="alert alert-danger">
+                            <div *ngIf="unitForm.controls['Description'].errors.required">
+                                Description is required.
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group m-b-10 form-inline">
+                    <div class="col-lg-4  text-right">
+                        <button type="submit" [disabled]="!unitForm.valid" class="btn btn-success mr-2"> OK </button>
+                        <button type="submit" class="btn btn-primary"> Cancel </button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <!-- end row -->
+    
+    
+    <!-- begin #footer -->
+    <app-footer></app-footer>
+    <!-- end #footer -->
+</div>
+<!-- end #content -->

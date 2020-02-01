@@ -2,12 +2,197 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>HalApp</title>
+  <title>Hal</title>
   <base href="/">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" id="fontFamilySrc" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/plugins/pace/pace.min.js"></script>
+  <!-- ================== END BASE JS ================== -->
+    <link href="../assets/plugins/bootstrap-calendar/css/bootstrap_calendar.css" rel="stylesheet" />
+    <link href="../assets/plugins/parsley/src/parsley.css" rel="stylesheet" />
+    <link href="../assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />	
+    <link href="../assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/DataTables/extensions/Buttons/css/buttons.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/DataTables/extensions/AutoFill/css/autoFill.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/DataTables/extensions/ColReorder/css/colReorder.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/DataTables/extensions/KeyTable/css/keyTable.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/DataTables/extensions/RowReorder/css/rowReorder.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/DataTables/extensions/Select/css/select.bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
   <app-root></app-root>
+  
+   
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../assets/plugins/bootstrap/bootstrap-4.1.1/js/bootstrap.bundle.min.js"></script>
+	<script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="../assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+	<!-- ================== END BASE JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+  <script src="../assets/plugins/bootstrap-calendar/js/bootstrap_calendar.min.js"></script>
+	<script src="../assets/plugins/flot/jquery.flot.min.js"></script>
+	<script src="../assets/plugins/flot/jquery.flot.time.min.js"></script>
+	<script src="../assets/plugins/flot/jquery.flot.resize.min.js"></script>
+	<script src="../assets/plugins/flot/jquery.flot.pie.min.js"></script>
+	<script src="../assets/plugins/flot/jquery.flot.stack.min.js"></script>
+	<script src="../assets/plugins/flot/jquery.flot.crosshair.min.js"></script>
+	
+	<script src="../assets/plugins/flot/CurvedLines/curvedLines.js"></script>
+	<script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../assets/js/demo.min.js"></script>
+    <script src="../assets/js/page-index-v4.demo.js"></script>
+    <script src="../assets/js/apps.min.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+    <script src="../assets/plugins/chart-js/Chart.js"></script>
+    <script src="../assets/plugins/parsley/dist/parsley.js"></script>
+    <script src="../assets/plugins/gritter/js/jquery.gritter.js"></script>
+    <script src="../assets/plugins/DataTables/media/js/jquery.dataTables.js"></script>
+	<script src="../assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+	<script src="../assets/plugins/DataTables/extensions/Buttons/js/dataTables.buttons.min.js"></script>
+	<script src="../assets/plugins/DataTables/extensions/Buttons/js/buttons.bootstrap.min.js"></script>
+	<script src="../assets/plugins/DataTables/extensions/Buttons/js/buttons.print.min.js"></script>
+	<script src="../assets/plugins/DataTables/extensions/Buttons/js/buttons.flash.min.js"></script>
+	<script src="../assets/plugins/DataTables/extensions/Buttons/js/buttons.html5.min.js"></script>
+	<script src="../assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+	<script src="../assets/plugins/DataTables/extensions/AutoFill/js/dataTables.autoFill.min.js"></script>
+	<script src="../assets/plugins/DataTables/extensions/ColReorder/js/dataTables.colReorder.min.js"></script>
+	<script src="../assets/plugins/DataTables/extensions/KeyTable/js/dataTables.keyTable.min.js"></script>
+	<script src="../assets/plugins/DataTables/extensions/RowReorder/js/dataTables.rowReorder.min.js"></script>
+	<script src="../assets/plugins/DataTables/extensions/Select/js/dataTables.select.min.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	<!-- <script>
+		$(document).ready(function() {
+		    App.init();
+		    Demo.init();
+		    DashboardDemo.init();
+		    PageDemo.init();
+		});
+	</script>
+  
+  <script>
+    var primary = "#2184DA",
+    primaryTransparent = "rgba(33,132,218,0.15)",
+    primaryLight = "#60A1DA",
+    primaryDark = "#1e77c5",
+    info = "#38AFD3",
+    infoLight = "#6FBDD5",
+    infoDark = "#2d8ca9",
+    success = "#17B6A4",
+    successTransparent = "rgba(23,182,264,0.15)",
+    successLight = "#59C2B7",
+    successDark = "#129283",
+    warning = "#fcaf41",
+    warningLight = "#EEBD77",
+    warningDark = "#ca8c34",
+    inverse = "#3C454D",
+    inverseTransparent = "rgba(60,69,77,0.15)",
+    grey = "#aab3ba",
+    purple = "#5f50c5",
+    purpleTransparent = "rgba(155,89,182,0.15)",
+    purpleLight = "#7f73d1",
+    purpleDark = "#4c409e",
+    danger = "#F04B46",
+    white = "#fff",
+    randomScalingFactor = function() {
+        return Math.round(100 * Math.random())
+    },
+    barChartData = {
+            labels: ["April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec","Jan", "Feb", "Mar"],
+            datasets: [{
+                borderWidth: 2,
+                borderColor: successLight,
+                pointBackgroundColor: successLight,
+                pointRadius: 2,
+                backgroundColor: successLight,
+                data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+            }]
+        },
+    lineChartData = {
+        labels: ["April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec","Jan", "Feb", "Mar"],
+        datasets: [{
+            label: "2018",
+            borderColor: inverse,
+            borderWidth: 2,
+            backgroundColor: inverseTransparent,
+            pointBackgroundColor: inverse,
+            pointHoverBackgroundColor: white,
+            pointHoverBorderColor: inverse,
+            pointBorderColor: white,
+            pointBorderWidth: 1,
+            pointRadius: 3,
+            data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+        }, {
+            label: "2019",
+            borderColor: success,
+            borderWidth: 2,
+            backgroundColor: successTransparent,
+            pointBackgroundColor: success,
+            pointHoverBackgroundColor: white,
+            pointHoverBorderColor: success,
+            pointBorderColor: white,
+            pointBorderWidth: 1,
+            pointRadius: 3,
+            data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+        },{
+            label: "2020",
+            borderColor: inverse,
+            borderWidth: 2,
+            backgroundColor: purpleTransparent,
+            pointBackgroundColor: inverse,
+            pointHoverBackgroundColor: white,
+            pointHoverBorderColor: inverse,
+            pointBorderColor: white,
+            pointBorderWidth: 1,
+            pointRadius: 3,
+            data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+        }
+        ]
+    };
+Chart.defaults.global.legend.display = !1, Chart.defaults.global.defaultFontFamily = '"Nunito", sans-serif', Chart.defaults.global.defaultFontStyle = "normal", Chart.defaults.global.defaultFontColor = inverse;
+var handleGenerateGraph = function() {
+  try {
+        var a = document.getElementById("line-chart").getContext("2d"),
+            c = (new Chart(a, {
+                type: "line",
+                data: lineChartData
+            }), document.getElementById("bar-chart").getContext("2d")),
+            e = (new Chart(c, {
+                type: "bar",
+                data: barChartData
+            }));
+          }
+              catch(err){
+                var a =  document.getElementById("bar-chart").getContext("2d"),
+                e = (new Chart(a, {
+                    type: "bar",
+                    data: barChartData
+                }));
+              }
+
+    },
+    PageDemo = function() {
+        "use strict";
+        return {
+            init: function() {
+              
+                handleGenerateGraph()
+              
+            }
+        }
+    }();
+</script>
+   -->
 </body>
 </html>

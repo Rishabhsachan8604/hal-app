@@ -1,0 +1,36 @@
+<div id="content" class="content">
+    <app-tree-navbar></app-tree-navbar>
+    <div class="row">
+        <div class="panel p-20 col-lg-12">
+            <form id="addunit" data-parsley-validate="true"> 
+                <fieldset>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group row m-b-10">
+                                <div class="col-md-12"> 
+                                    <label class="col-form-label">Symbol <span class="star">*</span></label>
+                                    <div class="">
+                                        <input type="text" name="UNIT_SYMBOL" class="form-control w-100" placeholder="Enter symbol" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="col-form-label">Formal Name</label>
+                                    <textarea type="text" name="UNIT_FORMAL_NAME" class="form-control m-b-5" placeholder="Enter formal name"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-10">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-success addunit mr-2"> Save </button>
+                                </div>	
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>
+
+    
+    

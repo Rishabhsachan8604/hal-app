@@ -1,0 +1,235 @@
+ <!-- begin row -->
+ <div id="content" class="content">
+    <app-tree-navbar></app-tree-navbar>
+    <div class="row">
+        <!-- begin col-2 -->
+        <div class="col-lg-2 col-6">
+            <!-- begin widget -->
+            <div class="widget widget-stat bg-white">
+                <div class="widget-stat-btn"><a href="#" data-click="widget-reload"><i class="fa fa-redo"></i></a></div>
+                <div class="widget-stat-number">1,293 <i class="fa fa-caret-up text-muted"></i></div>
+                <div class="widget-stat-text">Marketing Requisition</div>
+            </div>
+            <!-- end widget -->
+            <!-- begin widget -->
+            <div class="widget widget-stat bg-success text-white">
+                <div class="widget-stat-btn"><a href="#" data-click="widget-reload"><i class="fa fa-redo"></i></a></div>
+                <div class="widget-stat-text">PPC Requisition</div>
+                <div class="widget-stat-number">139</div>
+            </div>
+            <!-- end widget -->
+        </div>
+        <!-- end col-2 -->
+        <!-- begin col-2 -->
+        <div class="col-lg-2 col-6">
+            <!-- begin widget -->
+            <div class="widget widget-stat bg-inverse text-white">
+                <div class="widget-stat-btn"><a href="#" data-click="widget-reload"><i class="fa fa-redo"></i></a></div>
+                <div class="widget-stat-number">10</div>
+                <div class="widget-stat-text">Approved Requisition</div>
+            </div>
+            <!-- end widget -->
+            <!-- begin widget -->
+            <div class="widget widget-stat bg-warning text-white">
+                <div class="widget-stat-btn"><a href="#" data-click="widget-reload"><i class="fa fa-redo"></i></a></div>
+                <div class="widget-stat-text">Pending Requisition</div>
+                <div class="widget-stat-number">839 <i class="fa fa-caret-down"></i></div>
+            </div>
+            <!-- end widget -->
+        </div>
+        <!-- end col-2 -->
+        <!-- begin col-4 -->
+        <div class="col-lg-4 col-sm-6">
+            <!-- begin widget -->
+            <div class="widget widget-stat text-white bg-purple">
+                <div class="widget-stat-btn"><a href="#" data-click="widget-reload"><i class="fa fa-redo"></i></a></div>
+                <div class="widget-stat-content">
+                    <div class="widget-stat-title">Financial Results</div>
+                    <div class="widget-stat-text m-b-10">from 1st Apr 2019 - 31st Mar 2020</div>
+                    <div class="widget-stat-number m-b-10">1,302,493</div>
+                    <div class="widget-stat-chart">
+                        <div id="flot-visitor-chart" data-height="105px" style="margin: 0 -10px -10px"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end widget -->
+        </div>
+        <!-- end col-4 -->
+        <!-- begin col-4 -->
+        <div class="col-lg-4 col-sm-6">
+            <!-- begin widget -->
+            <div class="widget widget-stat text-white bg-primary-dark">
+                <div class="widget-stat-btn"><a href="#" data-click="widget-reload"><i class="fa fa-redo"></i></a></div>
+                <div class="widget-stat-content">
+                    <div class="widget-stat-title">Total Item Sold</div>
+                    <div class="widget-stat-text m-b-10">from 1st Apr 2019 - 31st September 2020</div>
+                    <div class="widget-stat-number m-b-10">123,293</div>
+                    <div class="widget-stat-chart">
+                        <div id="sparkline-bar-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end widget -->
+        </div>
+        <!-- end col-4 -->
+    </div>
+    <!-- end row -->
+    <!-- begin row -->
+    <div class="row">
+        <div class="col-lg-8">
+        
+        </div>
+        <div class="col-lg-4">
+            <!-- begin widget -->
+        
+        </div>
+    </div>
+    <!-- end row -->
+    <div class="row">
+        <!-- begin col-6 -->
+        <div class="col-lg-6">
+            <!-- begin panel -->
+            <div class="panel p-20">
+                <h5 class="m-t-0">Fulfilled Marketing Requisition Order for Finacial Year 2020-2021</h5>
+                <p class="m-b-15">
+                </p>
+                <div>
+                    <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                        <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                            <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink " style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                            <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                        </div>
+                    </div>
+                    <canvas id="bar-chart" width="475" height="237" class="chartjs-render-monitor" style="display: block; width: 475px; height: 237px;"></canvas>
+                </div>
+            </div>
+            <!-- end panel -->
+        </div>
+        <!-- end col-6 -->
+        <div class="col-lg-6 ui-sortable ">
+            <!-- begin panel -->
+            <div class="panel panel-inverse" data-sortable-id="index-6">
+                <div class="panel-heading ui-sortable-handle">
+                    <h4 class="panel-title">Quick Stock Check</h4>
+                </div>
+                <div class="panel-footer">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-silver" placeholder="Enter material code">
+                            <span class="input-group-append">
+                                <button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-body">
+                    <div class="slimScrollDiv" style="">
+                    <div class="" data-scrollbar="true" data-init="true" style="o">
+                        <ul class="media-list media-list-with-divider media-messaging">
+                            <li class="media media-sm">
+                                <div class="media-body">
+                                    <h5 class="media-heading">Amoxicillin</h5>
+                                    <p>Inventory at store 150</p>
+                                    <p>Inventory at product 100</p>
+                                    <p>Total Inventory 250</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 226.7px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                </div>
+                
+            </div>
+            <!-- end panel -->
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <!-- begin widget -->
+            <div class="widget">
+                <div class="widget-header bg-inverse-dark">
+                    <h4 class="text-white">Task Lists</h4>
+                </div>
+                <div class="widget-body p-0">
+                    <div data-scrollbar="true" data-height="347px">
+                        <ul class="widget-task-list">
+                            <li>
+                                <h4>Maketing Requisition MR001</h4>
+                            </li>
+                            <li>
+                                <h4>Maketing Requisition MR002</h4>
+                            </li>
+                            <li>
+                                <h4>Maketing Requisition MR003</h4>
+                            </li>
+                            <li>
+                                <h4>PPC Requisition MR001</h4>
+                            </li>
+                            <li>
+                                <h4>PPC Requisition MR001</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end widget -->
+        <div class="col-lg-6">
+            <!-- begin widget -->
+            <div class="widget p-0">
+                <div class="widget-header m-0">
+                    <a href="#" class="pull-right f-s-12">view more <i class="fa fa-angle-double-right"></i></a>
+                    <h4>List of fast moving item</h4>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-td-valign-middle m-b-0">
+                        <thead>
+                            <tr>	
+                                <th>Source</th>
+                                <th>Total</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label class="label label-danger">Adderall</label></td>
+                                <td>13,203</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><label class="label label-warning">Cymbalta</label></td>
+                                <td>11,251</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><label class="label label-success">Prednisone</label></td>
+                                <td>11,030</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><label class="label label-primary">Xanax</label></td>
+                                <td>10345</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><label class="label label-default">Zoloft</label></td>
+                                <td>9405</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><label class="label label-inverse">Losartan</label></td>
+                                <td>7340</td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

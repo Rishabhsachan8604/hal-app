@@ -1,0 +1,171 @@
+<!-- begin #sidebar -->
+<div id="sidebar" class="sidebar">
+    <!-- begin sidebar scrollbar -->
+    <div data-scrollbar="true" data-height="100%">
+        <!-- begin sidebar nav -->
+        <ul class="nav">
+            <li class="nav-user">
+                <div class="image">
+                    <img src="../assets/img/user_profile.jpg" alt="" />
+                </div>
+                <div class="info">
+                    <div class="name dropdown">
+                        <a href="javascript:;" data-toggle="dropdown">PPC ADMIN<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:;">Edit Profile</a></li>
+                            <li><a href="javascript:;"><span class="badge badge-danger pull-right">2</span> Inbox</a></li>
+                            <li class="divider"></li>
+                            <li class="ppc_logout"><a href="javascript:;">Log Out</a></li>
+                        </ul>
+                    </div>
+                    <div class="position">JOHN</div>
+                </div>
+            </li>
+            <li class="nav-header">Navigation</li>
+            <li [className]="title==='PPCDASHBOARD' ? 'active' : ''">
+                <a href="javascript:void(0);" [routerLink]="['dashboard']">
+                    <i class="fa fa-home"></i>
+                    <span>DASHBOARD</span>
+                </a>
+            </li>
+            <li class="has-sub">
+                <a href="javascript:;">
+                    <span class="badge pull-right">10</span>
+                    <i class="fa fa-inbox"></i> 
+                    <span>Email</span>
+                </a>
+                <ul class="sub-menu">
+                    <li><a href="javascript:void(0);">Inbox</a></li>
+                    <li><a href="javascript:void(0);">Compose</a></li>
+                    <li><a href="javascript:void(0);">Detail</a></li>
+                </ul>
+            </li>
+            <li class="nav-header">Activities</li>
+            <li [className]="title==='PPCMASTER' ? 'active has-sub' : 'has-sub'">
+                <a href="javascript:;">
+                    <b class="caret pull-right"></b>
+                    <i class="fa fa-inbox"></i> 
+                    <span>Masters</span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="has-sub">
+                        <a href="javascript:;">
+                            <b class="caret pull-right"></b>
+                            Group
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a [routerLink]="['master/group']">Add Group</a></li>
+                            <li><a [routerLink]="['master/sub-group']">Add Sub Group</a></li>
+                            <li><a routerLinkActive="active" [routerLink]="['master/list-group']">List Group</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="javascript:;">
+                            <b class="caret pull-right"></b>
+                            Category
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a [routerLink]="['master/category']">Add Category</a></li>
+                            <li><a [routerLink]="['master/sub-category']">Add Sub Category</a></li>
+                            <li><a [routerLink]="['master/list-category']">List Category</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="javascript:;">
+                            <b class="caret pull-right"></b>
+                            Brand
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a [routerLink]="['master/add-brand']">Add Brand</a></li>
+                            <li><a [routerLink]="['master/list-brand']">List Brand</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="javascript:;">
+                            <b class="caret pull-right"></b>
+                            Size
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a [routerLink]="['master/add-size']">Add Size</a></li>
+                            <li><a [routerLink]="['master/list-size']">List Size</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="javascript:;">
+                            <b class="caret pull-right"></b>
+                            Unit
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a [routerLink]="['master/unit']">Add Unit</a></li>
+                            <li><a [routerLink]="['master/list-unit']">List Unit</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="javascript:;">
+                            <b class="caret pull-right"></b>
+                            Stock Item
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a [routerLink]="['master/add-stock-item']">Add Item</a></li>
+                            <li><a [routerLink]="['master/list-stock-item']">List Item</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+           
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-suitcase"></i>
+                    <span>Transactions</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-file"></i>
+                    <span>Documents</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-th"></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+            
+            <li class="nav-header">Preferences</li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-map-marker"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-calendar"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-cogs"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-align-left"></i> 
+                    <span>Knowledge Base</span>
+                </a>
+            </li>
+            <li class="divider has-minify-btn">
+                <!-- begin sidebar minify button -->
+                <a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-left"></i></a>
+                <!-- end sidebar minify button -->
+            </li>
+        </ul>
+        <!-- end sidebar nav -->
+    </div>
+    <!-- end sidebar scrollbar -->
+</div>
+
